@@ -15,7 +15,6 @@
         <activity
             android:name=".RequestCallActivity"
             android:exported="false"
-            android:label="@string/title_activity_request_call"
             android:theme="@style/Theme.HelloWorld" />
         <activity
             android:name=".MainActivity"

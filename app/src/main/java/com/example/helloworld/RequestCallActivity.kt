@@ -1,6 +1,7 @@
 package com.example.helloworld
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -16,17 +17,22 @@ import com.example.helloworld.ui.theme.HelloWorldTheme
 class RequestCallActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.confirmation_layout)
         enableEdgeToEdge()
-        setContent {
-            HelloWorldTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
+        val name = intent?.extras?.getString("name").toString()
+        val surname = intent?.extras?.getString("surname").toString()
+        val competency = intent?.extras?.getString("competency").toString()
+        val phoneNumber = intent?.extras?.getString("phoneNumber").toString()
+        val textViewName : TextView = findViewById(R.id.textView2)
+        val textViewSurname : TextView = findViewById(R.id.textView5)
+        val textViewCompetency : TextView = findViewById(R.id.textView8)
+        val textViewPhoneNumber : TextView = findViewById(R.id.textView9)
+        textViewName.text = name
+        textViewSurname.text = surname
+        textViewCompetency.text = competency
+        textViewPhoneNumber.text = phoneNumber
+
+
     }
 }
 

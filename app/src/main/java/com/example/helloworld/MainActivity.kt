@@ -24,14 +24,15 @@ class MainActivity : ComponentActivity() {
         val buttonValidate = findViewById<Button>(R.id.buttonValidate)
         buttonValidate.setOnClickListener {
             var ctx = LocalContext
-            val surname = findViewById<EditText>(R.id.editTextText3)
-            val name = findViewById<EditText>(R.id.editTextText2)
-            val competency = findViewById<EditText>(R.id.editTextText4)
-            val phoneNumber = findViewById<EditText>(R.id.editTextPhone)
+            val surname = findViewById<EditText>(R.id.editTextText3).text
+            val name = findViewById<EditText>(R.id.editTextText2).text
+            val competency = findViewById<EditText>(R.id.editTextText4).text
+            val phoneNumber = findViewById<EditText>(R.id.editTextPhone).text
+
             val composeView = ComposeView(this).apply {
                 setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnLifecycleDestroyed(lifecycle))
                 setContent {
-                    MyComposeContent()
+                    MyComposeContent(name.toString(),surname.toString(),competency.toString(),phoneNumber.toString())
                 }
             }
             addContentView(composeView, ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
@@ -41,7 +42,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun MyComposeContent() {
+fun MyComposeContent(name: String, surname: String, competency: String, phoneNumber : String) {
     var ctx = LocalContext.current
     var showDialog by remember { mutableStateOf(true) }
 
@@ -51,6 +52,12 @@ fun MyComposeContent() {
                 onDismissRequest = { showDialog = false },
                 onConfirmation = {
                     val intent = Intent(ctx, RequestCallActivity::class.java)
+                    intent.putExtra("name", name)
+                    intent.putExtra("surname", surname)
+                    intent.putExtra("competency", competency)
+                    intent.putExtra("phoneNumber", phoneNumber)
+
+
                     ctx.startActivity(intent)
                     showDialog = false
                 },

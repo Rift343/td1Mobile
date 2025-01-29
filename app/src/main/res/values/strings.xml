@@ -13,5 +13,5 @@
     <string name="refused">Refuser</string>
     <string name="confirmation">Confirmez vous ces données</string>
     <string name="confirmationMessage">Confirmez vous les données que vous avez entré.</string>
-    <string name="title_activity_request_call">RequestCallActivity</string>
+    <string name="back">Retour</string>
 </resources>
