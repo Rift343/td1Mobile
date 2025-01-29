@@ -41,6 +41,7 @@ class RequestCallActivity : ComponentActivity() {
 
         buttonOK.setOnClickListener {
             val intentOK = Intent(this,CallPhoneActivity::class.java)
+            intentOK.putExtra("phoneNumber",phoneNumber)
             startActivity(intentOK)
         }
 

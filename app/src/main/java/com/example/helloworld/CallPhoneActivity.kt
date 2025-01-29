@@ -4,44 +4,32 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
+import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.res.painterResource
 import com.example.helloworld.ui.theme.HelloWorldTheme
 
 class CallPhoneActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val phoneNumber = intent?.extras?.getString("phoneNumber")
         enableEdgeToEdge()
-        setContent {
-            HelloWorldTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting2(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+        setContent{
+            HelloWorldTheme{
+                ImagePhone(phoneNumber)
             }
+
         }
+
     }
 }
 
 @Composable
-fun Greeting2(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
+fun ImagePhone(message:String?){
+    val image = painterResource(R.drawable.tel)
+    Image(
+        painter = image,
+        contentDescription = message
     )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview2() {
-    HelloWorldTheme {
-        Greeting2("Android")
-    }
+    Greeting(message.toString())
 }

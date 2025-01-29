@@ -15,4 +15,5 @@
     <string name="confirmationMessage">Confirmez vous les données que vous avez entré.</string>
     <string name="back">Retour</string>
     <string name="title_activity_call_phone">call_phone_activity</string>
+    <string name="title_activity_main2">MainActivity2</string>
 </resources>
