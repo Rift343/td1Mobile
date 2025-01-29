@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="31dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#4EBBE2"
-        android:text="Nom"
+        android:text="@string/name"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -21,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Votre prénom"
+        android:hint="@string/yourname"
         android:inputType="text"
         android:textSize="24sp" />
 
@@ -30,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#4EBBE2"
-        android:text="Prenom"
+        android:text="@string/surname"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -40,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Votre prénom"
+        android:hint="@string/yoursurname"
         android:inputType="text"
         android:textSize="24sp" />
 
@@ -49,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#4EBBE2"
-        android:text="Domaine de compétence"
+        android:text="@string/YouCompetency"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -59,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Compétence"
+        android:hint="@string/competency"
         android:inputType="text"
         android:textSize="24sp" />
 
@@ -69,7 +74,7 @@
         android:layout_height="wrap_content"
         android:background="#4EBBE2"
         android:lineSpacingExtra="24sp"
-        android:text="Numéro de téléphone"
+        android:text="@string/phonenumber"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -79,21 +84,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="N° tel"
+        android:hint="@string/Youphonenumber"
         android:inputType="phone"
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonValidate"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_height="66dp"
+        android:text="@string/validate"
         android:visibility="visible" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:text="English mode" />
 
 </LinearLayout>

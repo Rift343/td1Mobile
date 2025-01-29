@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
+    <string name="app_name">TP1</string>
     <string name="name">Nom</string>
     <string name="surname">Prénom</string>
     <string name="phonenumber">Numéro de théléphone</string>
@@ -8,5 +8,7 @@
     <string name="yoursurname">Votre prénom</string>
     <string name="YouCompetency">Domaine de compétence</string>
     <string name="Youphonenumber">n° tél</string>
-
+    <string name="validate">Valider</string>
+    <string name="confirmed">Confirmer</string>
+    <string name="refused">Refuser</string>
 </resources>

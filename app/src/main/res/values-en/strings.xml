@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="name">name</string>
+    <string name="surname">surname</string>
+    <string name="phonenumber">Phone number</string>
+    <string name="competency">competency</string>
+    <string name="yourname">Your name</string>
+    <string name="yoursurname">Your surname</string>
+    <string name="YouCompetency">Field of competence</string>
+    <string name="Youphonenumber">Phone number</string>
+    <string name="validate">Validate</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="refused">Refused</string>
+</resources>
