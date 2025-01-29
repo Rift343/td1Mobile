@@ -9,7 +9,8 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="31dp" />
+        android:layout_height="31dp"
+        android:background="#4EBBE2" />
 
     <TextView
         android:id="@+id/textView3"

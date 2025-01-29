@@ -12,4 +12,6 @@
     <string name="validate">Validate</string>
     <string name="confirmed">Confirmed</string>
     <string name="refused">Refused</string>
+    <string name="confirmation">Confirmez these data</string>
+    <string name="confirmationMessage">Confirm the data you entered.</string>
 </resources>
