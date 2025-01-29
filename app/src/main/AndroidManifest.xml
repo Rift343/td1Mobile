@@ -13,6 +13,16 @@
         android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
         <activity
+            android:name=".CallPhoneActivity"
+            android:exported="false"
+            android:label="@string/title_activity_call_phone"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
+            android:name=".call_phone_activity"
+            android:exported="false"
+            android:label="@string/title_activity_call_phone"
+            android:theme="@style/Theme.HelloWorld" />
+        <activity
             android:name=".RequestCallActivity"
             android:exported="false"
             android:theme="@style/Theme.HelloWorld" />

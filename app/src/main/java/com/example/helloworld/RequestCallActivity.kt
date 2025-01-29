@@ -1,6 +1,8 @@
 package com.example.helloworld
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,6 +13,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.helloworld.ui.theme.HelloWorldTheme
 
@@ -32,22 +35,25 @@ class RequestCallActivity : ComponentActivity() {
         textViewCompetency.text = competency
         textViewPhoneNumber.text = phoneNumber
 
+        val buttonOK = findViewById<Button>(R.id.button3)//on recupère le button pour continuer
+        val buttonReturn = findViewById<Button>(R.id.button4)//on recupére le button de retour
+        //Maintenant on créé pour ces buttons de listener pour réaliser les bonnes actions
+
+        buttonOK.setOnClickListener {
+            val intentOK = Intent(this,CallPhoneActivity::class.java)
+            startActivity(intentOK)
+        }
+
+        buttonReturn.setOnClickListener {
+            var intentReturn = Intent(this,MainActivity::class.java)
+            startActivity(intentReturn)
+        }
+
+
+
 
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    HelloWorldTheme {
-        Greeting("Android")
-    }
-}
+
