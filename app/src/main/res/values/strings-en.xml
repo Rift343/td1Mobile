@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameen">name</string>
+    <string name="surnameen">surname</string>
+    <string name="phonenumberen">Phone number</string>
+    <string name="competencyen">competency</string>
+    <string name="yournameen">Your name</string>
+    <string name="yoursurnameen">Your surname</string>
+    <string name="YouCompetencyen">Field of competence</string>
+    <string name="Youphonenumberen">Phone number</string>
+</resources>

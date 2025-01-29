@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="name">Nom</string>
+    <string name="surname">Prénom</string>
+    <string name="phonenumber">Numéro de théléphone</string>
+    <string name="competency">Compétence</string>
+    <string name="yourname">Votre nom</string>
+    <string name="yoursurname">Votre prénom</string>
+    <string name="YouCompetency">Domaine de compétence</string>
+    <string name="Youphonenumber">n° tél</string>
+
+</resources>
