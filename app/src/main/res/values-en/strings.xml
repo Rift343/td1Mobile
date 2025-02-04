@@ -15,4 +15,6 @@
     <string name="confirmation">Confirmez these data</string>
     <string name="confirmationMessage">Confirm the data you entered.</string>
     <string name="back">back</string>
+    <string name="call">Call</string>
+
 </resources>
