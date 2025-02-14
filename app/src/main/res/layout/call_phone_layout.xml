@@ -3,25 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="207dp"
+        android:layout_width="238dp"
+        android:layout_height="205dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
         android:src="@drawable/tel" />
+
 
     <TextView
         android:id="@+id/idPhoneNumber"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#808080"
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="118dp"
-        android:text="@string/call" />
+        android:layout_height="wrap_content"
+        android:text="@string/call"
+        android:textColor="@color/white"
+        android:background="#4EBBE2"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
 </LinearLayout>

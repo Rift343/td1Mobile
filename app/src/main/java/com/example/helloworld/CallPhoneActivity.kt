@@ -16,7 +16,7 @@ class CallPhoneActivity : ComponentActivity() {
         val phoneNumber = intent?.extras?.getString("phoneNumber")
         enableEdgeToEdge()
         val textViewName : TextView = findViewById(R.id.idPhoneNumber)
-        textViewName.text = phoneNumber
+        textViewName.text = phoneNumber.toString()
         val buttonCall = findViewById<Button>(R.id.button2)
         buttonCall.setOnClickListener{
             val intent = Intent(Intent.ACTION_DIAL).apply {

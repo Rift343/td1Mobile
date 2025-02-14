@@ -14,7 +14,6 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:text="TextView"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
@@ -22,7 +21,6 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:text="TextView"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
@@ -30,7 +28,6 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="TextView"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
@@ -38,36 +35,46 @@
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="57dp"
-        android:text="TextView"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/lightGray">
 
         <FrameLayout
             android:layout_width="160dp"
-            android:layout_height="110dp">
+            android:layout_height="110dp"
+            android:layout_marginEnd="8dp">
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@android:string/ok" />
+                android:text="@android:string/ok"
+                android:background="#4EBBE2"
+                android:textColor="@color/white"
+                android:padding="16dp" />
         </FrameLayout>
 
         <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp">
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/back" />
+                android:text="@string/back"
+                android:background="#4EBBE2"
+                android:textColor="@color/white"
+                android:padding="16dp" />
         </FrameLayout>
     </LinearLayout>
+
 
 </LinearLayout>

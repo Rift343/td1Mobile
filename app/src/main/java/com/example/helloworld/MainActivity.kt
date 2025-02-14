@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -28,6 +29,14 @@ class MainActivity : ComponentActivity() {
             val name = findViewById<EditText>(R.id.editTextText2).text
             val competency = findViewById<EditText>(R.id.editTextText4).text
             val phoneNumber = findViewById<EditText>(R.id.editTextPhone).text
+
+            if (surname.toString()=="" ||name.toString()==""||competency.toString()==""||phoneNumber.toString()=="")
+            {
+                val toast = Toast.makeText(this, R.string.notComplete, Toast.LENGTH_LONG) // in Activity
+                toast.show()
+                return@setOnClickListener
+
+            }
 
             val composeView = ComposeView(this).apply {
                 setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnLifecycleDestroyed(lifecycle))

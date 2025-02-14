@@ -15,4 +15,5 @@
     <string name="confirmationMessage">Confirmez vous les données que vous avez entré.</string>
     <string name="back">Retour</string>
     <string name="call">Appeler</string>
+    <string name="notComplete">Information manquante</string>
 </resources>
